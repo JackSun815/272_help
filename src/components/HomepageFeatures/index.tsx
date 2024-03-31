@@ -10,32 +10,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Github Commands',
+    title: 'Github Guide',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+      Git is a version control system that's essential for web development, providing tools for tracking changes, facilitating teamwork, and integrating with various development workflows.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Key Concepts',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Learn about the key concepts behind rails, such as MVC Architecture, Active Record framework, and so. 
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Ruby on Rails',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Learn about the foundations for Ruby on Rails, a powerful and popular open-source web application framework written in Ruby. 
       </>
     ),
   },

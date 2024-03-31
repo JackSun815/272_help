@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Ruby on Rails',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'This is a guide to using Ruby on Rails for 67-272',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
