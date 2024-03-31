@@ -2,54 +2,67 @@
 sidebar_position: 1
 ---
 
-# Manage Docs Versions
+# Database Operations
 
-Docusaurus can manage multiple versions of your docs.
-
-## Create a docs version
-
-Release a version 1.0 of your project:
+### Create a new Rails server
 
 ```bash
-npm run docusaurus docs:version 1.0
+rails new Probverb 
 ```
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+### Generate a new model
 
-Your docs now have 2 versions:
-
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
-
-## Add a Version Dropdown
-
-To navigate seamlessly across versions, add a version dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
+```bash
+rails generate model Proverb english:string translation:string active:boolean 
 ```
 
-The docs version dropdown appears in your navbar:
+### Run a rails server
 
-![Docs Version Dropdown](./img/docsVersionDropdown.png)
+```bash
+rails server 
+```
 
-## Update an existing version
+### Drop and migrate a database:
 
-It is possible to edit versioned docs in their respective folder:
+```bash
+rails db:drop
+rails db:migrate
+```
 
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+### Alternate way to populate a databse:
+
+```bash
+rake db:contexts
+```
+
+### Generate a Controller:
+
+```bash
+  rails generate controller Probverb index, show, edit, new, create, update, destroy.
+```
+
+Note: you may not need to include all 7 controller actions for controller the you're generating.
+
+### Test a model:
+
+```bash
+rails test test/models/probverb_test.rb
+```
+
+### Test all of your models:
+
+```bash
+rails test models
+```
+
+### Test a controller:
+
+```bash
+rails test test/controllers/probverbs_controller_test.rb
+```
+
+### Test all of your models:
+
+```bash
+rails test controllers
+```
