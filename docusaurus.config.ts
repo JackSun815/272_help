@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Ruby on Rails',
   tagline: 'This is a guide to using Ruby on Rails for 67-272',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/Designer.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
