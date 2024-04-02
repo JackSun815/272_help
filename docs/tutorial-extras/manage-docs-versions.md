@@ -4,65 +4,74 @@ sidebar_position: 1
 
 # Database Operations
 
-### Create a new Rails server
+### Basic rails commands:
 
-```bash
+**These are the most basic commands necessary
+to get started working in Rails.**
+
+This command generates a new Rails application.
+```python
 rails new Probverb 
 ```
 
-### Generate a new model
+This line generates a new model in Rails.
 
-```bash
+```python
 rails generate model Proverb english:string translation:string active:boolean 
 ```
 
-### Run a rails server
+This code will run a new Rails server.
 
-```bash
+```python
 rails server 
 ```
 
-### Drop and migrate a database:
+These two lines can help you update a database
+by dropping and then migrating it.
 
-```bash
+```pyhon
 rails db:drop
 rails db:migrate
 ```
 
-### Alternate way to populate a databse:
+*Alternatively, after making changes to a database,
+you can repopulate it with this command.
 
-```bash
+```python
 rake db:contexts
 ```
 
-### Generate a Controller:
+This line will help you generate a new controller in Rails.
 
-```bash
+```python
   rails generate controller Probverb index, show, edit, new, create, update, destroy.
 ```
 
-Note: you may not need to include all 7 controller actions for controller the you're generating.
+*Note: you may not need to include all 7 controller actions for controller the you're generating.
 
-### Test a model:
+### Running tests:
 
-```bash
+**The below commands will help you test models and controllers
+after you've created or modified them.**
+
+This line will test a specific model in your Rails application.
+```python
 rails test test/models/probverb_test.rb
 ```
 
-### Test all of your models:
-
-```bash
+This command tests all of the models in your Rails application.
+```python
 rails test models
 ```
 
-### Test a controller:
+This line will test a specific controller in your Rails application.
 
-```bash
+```python
 rails test test/controllers/probverbs_controller_test.rb
 ```
 
-### Test all of your models:
+This command will test all of the models in your Rails application.
 
-```bash
+```python
 rails test controllers
 ```
