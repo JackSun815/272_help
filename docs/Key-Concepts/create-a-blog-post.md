@@ -29,7 +29,7 @@ its Active Record ORM and scaffold generators. Below shows an example usage for 
 
 ### **Create (C)** 
 Handles the form submission, attempting to save a new Crime record to the database. 
-```ruby
+```python
 def create
   @crime = Crime.new(crime_params)
   if @crime.save
@@ -43,7 +43,7 @@ end
 
 ### **Read (R)** 
 Reading involves fetching records from the database. You can retrieve a single record, multiple records, or all records
-```ruby
+```python
 def index
   @active_crimes = Crime.where(active: true)
   @inactive_crimes = Crime.where(active: false)
@@ -52,7 +52,7 @@ end
 
 ### **Update (U)** 
 Updating a record involves modifying its attributes and saving those changes:
-```ruby
+```python
 def update
   if @crime.update(crime_params)
     flash[:notice] = "Successfully updated the crime."
@@ -65,7 +65,7 @@ end
 
 ### **Delete (D)** 
 Deleting a record removes it from the database:
-```ruby
+```python
 def destroy
   if @crime.destroy
     flash[:notice] = "Successfully removed the crime from the system."

@@ -9,6 +9,8 @@ Ruby on Rails (Rails) is a web application framework that is built upon the MVC 
 ## Model in Rails
 In Rails, models are Ruby classes that extend **ActiveRecord::Base**, linking them directly to the database table they are meant to represent. Models in Rails handle data, logic, and rules of the application. Thanks to Rails' ActiveRecord, models in Rails not only represent the structure and relationships of the data but also provide an interface to carry out CRUD (Create, Read, Update, Delete) operations directly on the database without needing to write SQL queries.
 
+**ActiveRecord** is the Model component within the Model-View-Controller (MVC) architecture pattern in Ruby on Rails. It serves as an Object-Relational Mapping (ORM) system, facilitating the creation, use, and management of database records by mapping them to Ruby objects. ActiveRecord automates the interaction with the database, allowing developers to perform database operations without writing SQL code, making database manipulation more intuitive and seamless within Rails applications.
+
 ### Rails Model Key Points:
 - **ActiveRecord Migrations**: Rails uses migrations to evolve your database schema over time in a version-controlled, reversible way.
 - **Validations**: Models enforce data integrity and consistency through validations.
