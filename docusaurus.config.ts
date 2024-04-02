@@ -55,6 +55,9 @@ const config: Config = {
   ],
 
   themeConfig: {
+    prism: {
+      additionalLanguages: ['ruby'],
+    },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
