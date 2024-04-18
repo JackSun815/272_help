@@ -10,13 +10,13 @@ sidebar_position: 1
 to get started working in Rails.**
 
 This command generates a new Rails application.
-```ruby
+```python
 rails new Probverb 
 ```
 
 This line generates a new model in Rails.
 
-```ruby
+```python
 rails generate model Proverb english:string translation:string active:boolean 
 ```
 
