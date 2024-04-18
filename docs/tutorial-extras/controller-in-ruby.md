@@ -1,12 +1,13 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-# Models in Ruby
+# Testing
 
-Creating models in Ruby on Rails is essential as they form the core of your application's business logic. Models in Rails use ActiveRecord, an Object-Relational Mapping (ORM) system, allowing models to interact with the database in an object-oriented manner. Here, we'll discuss writing models by exploring the example of an **Officer** model, covering key concepts and functionality.
+Testing is an integral part of the Rails framework, designed to ensure that your application performs correctly under specified conditions and continues to do so as changes are made. 
 
-## Important Components of a Model
+
+## Factories
 
 Below is a list of important components in a model:
 

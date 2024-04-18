@@ -2,54 +2,77 @@
 sidebar_position: 1
 ---
 
-# Manage Docs Versions
+# Database Operations
 
-Docusaurus can manage multiple versions of your docs.
+### Basic rails commands
 
-## Create a docs version
+**These are the most basic commands necessary
+to get started working in Rails.**
 
-Release a version 1.0 of your project:
-
-```bash
-npm run docusaurus docs:version 1.0
+This command generates a new Rails application.
+```ruby
+rails new Probverb 
 ```
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+This line generates a new model in Rails.
 
-Your docs now have 2 versions:
-
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
-
-## Add a Version Dropdown
-
-To navigate seamlessly across versions, add a version dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
+```ruby
+rails generate model Proverb english:string translation:string active:boolean 
 ```
 
-The docs version dropdown appears in your navbar:
+This code will run a new Rails server.
 
-![Docs Version Dropdown](./img/docsVersionDropdown.png)
+```python
+rails server 
+```
 
-## Update an existing version
+These two lines can help you update a database
+by dropping and then migrating it.
 
-It is possible to edit versioned docs in their respective folder:
+```pyhon
+rails db:drop
+rails db:migrate
+```
 
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+*Alternatively, after making changes to a database,
+you can repopulate it with this command.
+
+```python
+rake db:contexts
+```
+
+This line will help you generate a new controller in Rails.
+
+```python
+  rails generate controller Probverb index, show, edit, new, create, update, destroy.
+```
+
+*Note: you may not need to include all 7 controller actions for controller the you're generating.
+
+### Running tests
+
+**The below commands will help you test models and controllers
+after you've created or modified them.**
+
+This line will test a specific model in your Rails application.
+```python
+rails test test/models/probverb_test.rb
+```
+
+This command tests all of the models in your Rails application.
+```python
+rails test models
+```
+
+This line will test a specific controller in your Rails application.
+
+```python
+rails test test/controllers/probverbs_controller_test.rb
+```
+
+This command will test all of the models in your Rails application.
+
+```python
+rails test controllers
+```
+
