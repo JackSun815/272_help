@@ -45,8 +45,8 @@ end
 Reading involves fetching records from the database. You can retrieve a single record, multiple records, or all records
 ```python
 def index
-  @active_crimes = Crime.where(active: true)
-  @inactive_crimes = Crime.where(active: false)
+  @active_crimes = Crime.active.alphabetical
+  @inactive_crimes = Crime.inactive.alphabetical
 end
 ```
 
