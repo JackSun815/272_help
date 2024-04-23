@@ -55,16 +55,13 @@ const config: Config = {
   ],
 
   themeConfig: {
-    prism: {
-      additionalLanguages: ['ruby'],
-    },
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/Designer.png',
     navbar: {
       title: 'Ruby on Rails',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/Designer.png',
       },
       items: [
         // {
@@ -75,7 +72,7 @@ const config: Config = {
         // },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/JackSun815/272_help',
           label: 'GitHub',
           position: 'right',
         },
@@ -85,28 +82,28 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Tutorial',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Get Started',
+              to: '/docs/Key-Concepts',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'More Resources',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: '272 Schedule',
+              href: 'https://67272.cmuis.net',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Rails Website',
+              href: 'https://rubyonrails.org',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/rails?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor',
             },
           ],
         },
@@ -115,11 +112,11 @@ const config: Config = {
           items: [
             {
               label: 'Blog',
-              to: '/blog',
+              to: '/Key-Concepts',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/JackSun815/272_help',
             },
           ],
         },
