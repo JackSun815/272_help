@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Views in Ruby
@@ -53,3 +53,26 @@ This line will include the content of the _navbar.html.erb partial into the view
 
 Partials and views are closely related. While views can function independently, partials are meant to be embedded within views. This relationship helps in managing complex user interfaces by breaking them down into manageable and reusable components.
 
+### Benefits of using partials.
+
+<ol>
+  <li>DRY Principle: Don't Repeat Yourself. Partials help avoid code duplication.</li>
+  <li>Ease of Maintenance: Updating a single partial updates all instances where the partial is used.</li>
+  <li>Enhanced Readability: Smaller, specific files are easier to read and understand than one large view file.</li>
+</ol>
+
+## Best Practices
+
+When using views and partials, it’s important to keep them focused on presentation. Heavy logic should be placed in helpers or controllers, not directly in the view or partial, to maintain clean code and separation of concerns.
+
+```jsx
+# Good example: Using a helper method to format time
+<%= time_tag(officer.created_at, format: :short) %>
+
+# Bad example: Complex logic in view
+<% if officer.created_at > Time.now - 1.day %>
+  <span>New!</span>
+<% end %>
+```
+
+In summary, views generate the pages that users interact with, while partials allow you to reuse template segments across different views. Understanding how to effectively use these tools will significantly improve the organization and maintenance of your Rails applications.
