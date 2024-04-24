@@ -38,7 +38,17 @@ The sqlite3 gem integrates the SQLite database with Ruby applications, particula
 gem 'validates_timeliness'
 ```
 
-The validates_timeliness gem is designed to facilitate date and time validation in ActiveRecord models. It extends ActiveRecord's built-in validation methods, offering a more flexible way to validate dates and times. By using this gem, you can easily ensure that the date and time values in your applications are within expected ranges or formats, enhancing data integrity and preventing common errors related to incorrect date and time inputs.For example, you might use `validates_date :birthday, before: lambda { 18.years.ago }` to validate that a user's birthday indicates they are at least 18 years old. 
+The validates_timeliness gem is designed to facilitate date and time validation in ActiveRecord models. It extends ActiveRecord's built-in validation methods, offering a more flexible way to validate dates and times. By using this gem, you can easily ensure that the date and time values in your applications are within expected ranges or formats, enhancing data integrity and preventing common errors related to incorrect date and time inputs.For example, you might use `validates_date :birthday, before: lambda { 18.years.ago }` to validate that a user's birthday indicates they are at least 18 years old.
+
+### SimpleCov
+```python
+gem 'simplecov'
+```
+
+SimpleCov is a Ruby gem that provides a way to measure the code coverage of your Ruby tests. It produces reports that show which lines of code have been executed by your tests and which have not, helping you to identify areas of your code that may need more thorough testing.
+
+After running your tests, SimpleCov generates a coverage report in the **coverage** directory of your project. You can open **coverage/index.html** in your web browser to view the report. This is especially for the earlier phases in 272 when you are building out the models as 272 requires 100% test coverage.  
+
 
 ### CanCanCan
 ```python
