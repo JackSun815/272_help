@@ -35,7 +35,9 @@ rails db:migrate
 ```
 
 *Alternatively, after making changes to a database,
-you can repopulate it with this command.
+you can repopulate it with this command. 
+
+*This command is being written for you in the context of 67-272, however, it doesn't exist in the real world*
 
 ```python
 rake db:contexts
