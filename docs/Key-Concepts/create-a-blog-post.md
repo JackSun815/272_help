@@ -16,10 +16,10 @@ Recall in SQL, we have learned similar operations. Below is a handy table for al
 
 | CRUD Operation    | SQL Clause | HTTP Verb   | Controller Action   | 
 |-----------|-------------|------------|------------|
-| **Create**    | INSERT       | POST  | create  | 
-| **Read** | SELECT        | GET  |index/show/new/edit  | 
-| **Update**    | UPDATE       | PATCH  | update  | 
-| **Delete** | DELETE        | DELETE  | destroy  |
+| **Create**    | INSERT       | POST  | create  |   
+| **Read** | SELECT        | GET  |index/show/new/edit  |
+| **Update**    | UPDATE       | PATCH  | update  |  
+| **Delete** | DELETE        | DELETE  | destroy  | 
 <br />
 
 ## CRUD in Ruby on Rails 
