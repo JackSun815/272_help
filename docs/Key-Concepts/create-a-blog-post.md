@@ -16,10 +16,10 @@ Recall in SQL, we have learned similar operations. Below is a handy table for al
 
 | CRUD Operation    | SQL Clause | HTTP Verb   | Controller Action   | 
 |-----------|-------------|------------|------------|
-| **Create**    | INSERT       | POST  | create  | 
-| **Read** | SELECT        | GET  |index/show/new/edit  | 
-| **Update**    | UPDATE       | PATCH  | update  | 
-| **Delete** | DELETE        | DELETE  | destroy  |
+| **Create**    | INSERT       | POST  | create  |   
+| **Read** | SELECT        | GET  |index/show/new/edit  |
+| **Update**    | UPDATE       | PATCH  | update  |  
+| **Delete** | DELETE        | DELETE  | destroy  | 
 <br />
 
 ## CRUD in Ruby on Rails 
@@ -45,8 +45,8 @@ end
 Reading involves fetching records from the database. You can retrieve a single record, multiple records, or all records
 ```python
 def index
-  @active_crimes = Crime.where(active: true)
-  @inactive_crimes = Crime.where(active: false)
+  @active_crimes = Crime.active.alphabetical
+  @inactive_crimes = Crime.inactive.alphabetical
 end
 ```
 

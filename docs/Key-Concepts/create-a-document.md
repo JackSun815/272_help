@@ -20,7 +20,7 @@ In Rails, models are Ruby classes that extend **ActiveRecord::Base**, linking th
 ## View in Rails
 Views in Rails are essentially the HTML templates that get sent to the client's web browser. They are written in HTML, CSS, JavaScript, and an embedded Ruby (ERB) syntax that allows Ruby code to be included in web pages. Views in Rails do not contain any business logic; they merely present the data, which the controller provides, in the desired format.
 
-### Rails Model Key Points:
+### Rails View Key Points:
 - **ERB**: Embedded Ruby used within HTML to display dynamic content.
 - **Layouts and Partials**: Reusable templates for a consistent application layout and DRY code.
 - **Helpers**: Methods used to assist in rendering views, such as form builders or link generators.
